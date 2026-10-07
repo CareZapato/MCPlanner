@@ -1,0 +1,28 @@
+{
+  "name": "minecraft-planner",
+  "version": "1.0.0",
+  "description": "Aplicación para gestionar vendedores de Minecraft",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "cd backend && node server.js",
+    "client": "http-server frontend -p 8080 -o",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd backend && npm install"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "minecraft",
+    "vendedores"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.6",
+    "express": "^4.22.3",
+    "http-server": "^14.1.1"
+  }
+}

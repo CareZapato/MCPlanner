@@ -1,0 +1,1359 @@
+{
+  "descripcion": "Relación entre cada encantamiento, su nombre en español e inglés, y los tipos de objetos compatibles de Minecraft Java Edition 26.3. Los objetos se expresan por familia, no por cada material.",
+  "totalOficial": 43,
+  "encantamientos": [
+    {
+      "id": "minecraft:mending",
+      "ingles": "Mending",
+      "espanol": "Reparacion",
+      "aliases": [],
+      "nombreLista": "Reparacion",
+      "encantamientoId": 21,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        },
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        },
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        },
+        {
+          "ingles": "Crossbow",
+          "espanol": "Ballesta"
+        },
+        {
+          "ingles": "Pickaxe",
+          "espanol": "Pico"
+        },
+        {
+          "ingles": "Shovel",
+          "espanol": "Pala"
+        },
+        {
+          "ingles": "Hoe",
+          "espanol": "Azada"
+        },
+        {
+          "ingles": "Shears",
+          "espanol": "Tijeras"
+        },
+        {
+          "ingles": "Fishing Rod",
+          "espanol": "Caña de pescar"
+        },
+        {
+          "ingles": "Flint and Steel",
+          "espanol": "Mechero"
+        },
+        {
+          "ingles": "Brush",
+          "espanol": "Pincel"
+        },
+        {
+          "ingles": "Carrot on a Stick",
+          "espanol": "Caña con zanahoria"
+        },
+        {
+          "ingles": "Warped Fungus on a Stick",
+          "espanol": "Caña con hongo distorsionado"
+        },
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        },
+        {
+          "ingles": "Elytra",
+          "espanol": "Élitros"
+        },
+        {
+          "ingles": "Shield",
+          "espanol": "Escudo"
+        }
+      ],
+      "descripcion": "Repara la durabilidad del objeto cuando el jugador recoge orbes de experiencia.",
+      "descripcionIngles": "Repairs durability when the player collects experience orbs."
+    },
+    {
+      "id": "minecraft:unbreaking",
+      "ingles": "Unbreaking",
+      "espanol": "Irrompible",
+      "aliases": [
+        "Irrompibilidad"
+      ],
+      "nombreLista": "Irrompible",
+      "encantamientoId": 35,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        },
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        },
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        },
+        {
+          "ingles": "Crossbow",
+          "espanol": "Ballesta"
+        },
+        {
+          "ingles": "Pickaxe",
+          "espanol": "Pico"
+        },
+        {
+          "ingles": "Shovel",
+          "espanol": "Pala"
+        },
+        {
+          "ingles": "Hoe",
+          "espanol": "Azada"
+        },
+        {
+          "ingles": "Shears",
+          "espanol": "Tijeras"
+        },
+        {
+          "ingles": "Fishing Rod",
+          "espanol": "Caña de pescar"
+        },
+        {
+          "ingles": "Flint and Steel",
+          "espanol": "Mechero"
+        },
+        {
+          "ingles": "Brush",
+          "espanol": "Pincel"
+        },
+        {
+          "ingles": "Carrot on a Stick",
+          "espanol": "Caña con zanahoria"
+        },
+        {
+          "ingles": "Warped Fungus on a Stick",
+          "espanol": "Caña con hongo distorsionado"
+        },
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        },
+        {
+          "ingles": "Elytra",
+          "espanol": "Élitros"
+        },
+        {
+          "ingles": "Shield",
+          "espanol": "Escudo"
+        }
+      ],
+      "descripcion": "Reduce la frecuencia con la que el objeto pierde durabilidad, haciendo que dure más.",
+      "descripcionIngles": "Reduces how quickly the item loses durability, making it last longer."
+    },
+    {
+      "id": "minecraft:vanishing_curse",
+      "ingles": "Curse of Vanishing",
+      "espanol": "Maldicion de desvanecimiento",
+      "aliases": [
+        "Maldicion de desaparicion"
+      ],
+      "nombreLista": "Maldicion de desvanecimiento",
+      "encantamientoId": 24,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        },
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        },
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        },
+        {
+          "ingles": "Crossbow",
+          "espanol": "Ballesta"
+        },
+        {
+          "ingles": "Pickaxe",
+          "espanol": "Pico"
+        },
+        {
+          "ingles": "Shovel",
+          "espanol": "Pala"
+        },
+        {
+          "ingles": "Hoe",
+          "espanol": "Azada"
+        },
+        {
+          "ingles": "Shears",
+          "espanol": "Tijeras"
+        },
+        {
+          "ingles": "Fishing Rod",
+          "espanol": "Caña de pescar"
+        },
+        {
+          "ingles": "Flint and Steel",
+          "espanol": "Mechero"
+        },
+        {
+          "ingles": "Brush",
+          "espanol": "Pincel"
+        },
+        {
+          "ingles": "Carrot on a Stick",
+          "espanol": "Caña con zanahoria"
+        },
+        {
+          "ingles": "Warped Fungus on a Stick",
+          "espanol": "Caña con hongo distorsionado"
+        },
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        },
+        {
+          "ingles": "Elytra",
+          "espanol": "Élitros"
+        },
+        {
+          "ingles": "Shield",
+          "espanol": "Escudo"
+        },
+        {
+          "ingles": "Mob Head",
+          "espanol": "Cabeza de criatura"
+        },
+        {
+          "ingles": "Carved Pumpkin",
+          "espanol": "Calabaza tallada"
+        },
+        {
+          "ingles": "Compass",
+          "espanol": "Brújula"
+        }
+      ],
+      "descripcion": "Hace que el objeto desaparezca cuando su dueño muere en lugar de caer normalmente.",
+      "descripcionIngles": "Causes the item to disappear when its owner dies instead of dropping normally."
+    },
+    {
+      "id": "minecraft:aqua_affinity",
+      "ingles": "Aqua Affinity",
+      "espanol": "Afinidad al agua",
+      "aliases": [
+        "Afinidad acuatica"
+      ],
+      "nombreLista": "Afinidad al agua",
+      "encantamientoId": 26,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        }
+      ],
+      "descripcion": "Aumenta la velocidad al romper bloques mientras el jugador está bajo el agua.",
+      "descripcionIngles": "Speeds up block breaking while the player is underwater."
+    },
+    {
+      "id": "minecraft:blast_protection",
+      "ingles": "Blast Protection",
+      "espanol": "Proteccion contra rafagas",
+      "aliases": [
+        "Proteccion contra explosiones"
+      ],
+      "nombreLista": "Proteccion contra rafagas",
+      "encantamientoId": 7,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Reduce el daño y el retroceso provocados por explosiones.",
+      "descripcionIngles": "Reduces damage and knockback caused by explosions."
+    },
+    {
+      "id": "minecraft:binding_curse",
+      "ingles": "Curse of Binding",
+      "espanol": "Maldicion de vinculacion",
+      "aliases": [
+        "Maldicion de ligamiento"
+      ],
+      "nombreLista": "Maldicion de vinculacion",
+      "encantamientoId": 19,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        },
+        {
+          "ingles": "Elytra",
+          "espanol": "Élitros"
+        },
+        {
+          "ingles": "Mob Head",
+          "espanol": "Cabeza de criatura"
+        },
+        {
+          "ingles": "Carved Pumpkin",
+          "espanol": "Calabaza tallada"
+        }
+      ],
+      "descripcion": "Impide quitar normalmente una pieza de armadura equipada hasta que se rompa o el jugador muera.",
+      "descripcionIngles": "Prevents equipped cursed armor from being removed normally until it breaks or the wearer dies."
+    },
+    {
+      "id": "minecraft:depth_strider",
+      "ingles": "Depth Strider",
+      "espanol": "agilidad acuatica",
+      "aliases": [],
+      "nombreLista": "agilidad acuatica",
+      "encantamientoId": 11,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Aumenta la velocidad de movimiento del jugador bajo el agua.",
+      "descripcionIngles": "Increases movement speed while walking or swimming underwater."
+    },
+    {
+      "id": "minecraft:feather_falling",
+      "ingles": "Feather Falling",
+      "espanol": "caida de pluma",
+      "aliases": [],
+      "nombreLista": "caida de pluma",
+      "encantamientoId": 13,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Reduce el daño recibido por caídas.",
+      "descripcionIngles": "Reduces fall damage taken by the wearer."
+    },
+    {
+      "id": "minecraft:fire_protection",
+      "ingles": "Fire Protection",
+      "espanol": "Proteccion del fuego",
+      "aliases": [
+        "Proteccion contra el fuego"
+      ],
+      "nombreLista": "Proteccion del fuego",
+      "encantamientoId": 20,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Reduce el daño por fuego y el tiempo que el jugador permanece ardiendo.",
+      "descripcionIngles": "Reduces fire damage and shortens the time the wearer remains on fire."
+    },
+    {
+      "id": "minecraft:frost_walker",
+      "ingles": "Frost Walker",
+      "espanol": "paso helado",
+      "aliases": [],
+      "nombreLista": "paso helado",
+      "encantamientoId": 10,
+      "nivelMaximo": 2,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Congela temporalmente el agua bajo el jugador y evita el daño de bloques de magma mientras se llevan las botas.",
+      "descripcionIngles": "Freezes nearby water beneath the player into temporary frosted ice and protects from magma block damage while worn."
+    },
+    {
+      "id": "minecraft:projectile_protection",
+      "ingles": "Projectile Protection",
+      "espanol": "Proteccion contra proyectiles",
+      "aliases": [],
+      "nombreLista": "Proteccion contra proyectiles",
+      "encantamientoId": 38,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Reduce el daño recibido por proyectiles, como flechas y ataques similares.",
+      "descripcionIngles": "Reduces damage received from projectiles such as arrows and similar attacks."
+    },
+    {
+      "id": "minecraft:protection",
+      "ingles": "Protection",
+      "espanol": "Proteccion",
+      "aliases": [],
+      "nombreLista": "Proteccion",
+      "encantamientoId": 36,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Reduce la mayoría de los tipos de daño recibido; cada nivel aumenta la protección.",
+      "descripcionIngles": "Reduces most types of incoming damage; each level increases the protection provided."
+    },
+    {
+      "id": "minecraft:respiration",
+      "ingles": "Respiration",
+      "espanol": "Respiracion",
+      "aliases": [],
+      "nombreLista": "Respiracion",
+      "encantamientoId": 2,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        }
+      ],
+      "descripcion": "Aumenta el tiempo que el jugador puede respirar bajo el agua.",
+      "descripcionIngles": "Extends how long the player can breathe underwater and improves survival while submerged."
+    },
+    {
+      "id": "minecraft:soul_speed",
+      "ingles": "Soul Speed",
+      "espanol": "Velocidad del alma",
+      "aliases": [
+        "Velocidad de almas"
+      ],
+      "nombreLista": null,
+      "encantamientoId": null,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "faltante",
+      "items": [
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Aumenta la velocidad al caminar sobre arena de almas y tierra de almas.",
+      "descripcionIngles": "Increases walking speed on soul sand and soul soil."
+    },
+    {
+      "id": "minecraft:thorns",
+      "ingles": "Thorns",
+      "espanol": "Espinas",
+      "aliases": [],
+      "nombreLista": "Espinas",
+      "encantamientoId": 23,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Helmet",
+          "espanol": "Casco"
+        },
+        {
+          "ingles": "Turtle Shell",
+          "espanol": "Caparazón de tortuga"
+        },
+        {
+          "ingles": "Chestplate",
+          "espanol": "Peto"
+        },
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        },
+        {
+          "ingles": "Boots",
+          "espanol": "Botas"
+        }
+      ],
+      "descripcion": "Puede dañar a quien ataque al jugador, a cambio de consumir durabilidad adicional.",
+      "descripcionIngles": "Can damage attackers when the wearer is hit, at the cost of additional durability usage."
+    },
+    {
+      "id": "minecraft:swift_sneak",
+      "ingles": "Swift Sneak",
+      "espanol": "Sigilo veloz",
+      "aliases": [
+        "Sigilo rápido"
+      ],
+      "nombreLista": null,
+      "encantamientoId": null,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "faltante",
+      "items": [
+        {
+          "ingles": "Leggings",
+          "espanol": "Grebas"
+        }
+      ],
+      "descripcion": "Aumenta la velocidad de movimiento del jugador mientras está agachado.",
+      "descripcionIngles": "Increases the player's movement speed while sneaking."
+    },
+    {
+      "id": "minecraft:bane_of_arthropods",
+      "ingles": "Bane of Arthropods",
+      "espanol": "maldicion de los antropodos",
+      "aliases": [
+        "Perdicion de los artropodos",
+        "Maldición de los artrópodos"
+      ],
+      "nombreLista": "maldicion de los antropodos",
+      "encantamientoId": 14,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        }
+      ],
+      "descripcion": "Inflige daño adicional a criaturas artrópodas y les aplica temporalmente un efecto de lentitud.",
+      "descripcionIngles": "Deals extra damage to arthropod mobs and applies a temporary slowing effect to them."
+    },
+    {
+      "id": "minecraft:breach",
+      "ingles": "Breach",
+      "espanol": "Brecha",
+      "aliases": [
+        "Fisura"
+      ],
+      "nombreLista": "Brecha",
+      "encantamientoId": 15,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        }
+      ],
+      "descripcion": "Reduce la efectividad de la armadura del objetivo, permitiendo que los ataques de maza ignoren más armadura con niveles superiores.",
+      "descripcionIngles": "Reduces the effectiveness of the target's armor, allowing mace attacks to ignore more armor at higher levels."
+    },
+    {
+      "id": "minecraft:density",
+      "ingles": "Density",
+      "espanol": "Densidad",
+      "aliases": [],
+      "nombreLista": "Densidad",
+      "encantamientoId": 33,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        }
+      ],
+      "descripcion": "Aumenta el daño adicional que obtiene la maza al caer antes de realizar un ataque de impacto.",
+      "descripcionIngles": "Increases the extra damage a mace gains from falling before a smash attack."
+    },
+    {
+      "id": "minecraft:efficiency",
+      "ingles": "Efficiency",
+      "espanol": "Eficiencia",
+      "aliases": [],
+      "nombreLista": "Eficiencia",
+      "encantamientoId": 32,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Pickaxe",
+          "espanol": "Pico"
+        },
+        {
+          "ingles": "Shovel",
+          "espanol": "Pala"
+        },
+        {
+          "ingles": "Hoe",
+          "espanol": "Azada"
+        },
+        {
+          "ingles": "Shears",
+          "espanol": "Tijeras"
+        }
+      ],
+      "descripcion": "Aumenta la velocidad con la que las herramientas compatibles rompen bloques.",
+      "descripcionIngles": "Increases the speed at which compatible tools break blocks."
+    },
+    {
+      "id": "minecraft:fire_aspect",
+      "ingles": "Fire Aspect",
+      "espanol": "Aspecto Igneo",
+      "aliases": [],
+      "nombreLista": "Aspecto Igneo",
+      "encantamientoId": 6,
+      "nivelMaximo": 2,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        }
+      ],
+      "descripcion": "Prende fuego a los objetivos golpeados durante un tiempo que aumenta con el nivel.",
+      "descripcionIngles": "Sets struck targets on fire for a duration that increases with enchantment level."
+    },
+    {
+      "id": "minecraft:looting",
+      "ingles": "Looting",
+      "espanol": "Saqueo",
+      "aliases": [
+        "Botin"
+      ],
+      "nombreLista": "Saqueo",
+      "encantamientoId": 27,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        }
+      ],
+      "descripcion": "Aumenta la cantidad o la probabilidad de ciertos botines obtenidos de criaturas eliminadas por el jugador.",
+      "descripcionIngles": "Improves the quantity or chance of certain drops from mobs killed by the player."
+    },
+    {
+      "id": "minecraft:lunge",
+      "ingles": "Lunge",
+      "espanol": "Estocada",
+      "aliases": [],
+      "nombreLista": null,
+      "encantamientoId": null,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "faltante",
+      "items": [
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        }
+      ],
+      "descripcion": "Impulsa horizontalmente al jugador al realizar una estocada con la lanza; los niveles mayores dan más impulso pero consumen más hambre.",
+      "descripcionIngles": "Propels the player horizontally during a spear jab; higher levels provide a stronger burst but consume more hunger."
+    },
+    {
+      "id": "minecraft:impaling",
+      "ingles": "Impaling",
+      "espanol": "Empalar",
+      "aliases": [
+        "Empalamiento"
+      ],
+      "nombreLista": "Empalar",
+      "encantamientoId": 30,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        }
+      ],
+      "descripcion": "Aumenta el daño del tridente contra objetivos acuáticos; las criaturas afectadas varían según la edición.",
+      "descripcionIngles": "Increases trident damage against aquatic targets; the exact affected targets differ between editions."
+    },
+    {
+      "id": "minecraft:knockback",
+      "ingles": "Knockback",
+      "espanol": "Derribar",
+      "aliases": [
+        "Empuje"
+      ],
+      "nombreLista": "Derribar",
+      "encantamientoId": 29,
+      "nivelMaximo": 2,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        }
+      ],
+      "descripcion": "Aumenta la distancia a la que los objetivos son empujados al recibir un golpe cuerpo a cuerpo.",
+      "descripcionIngles": "Increases the distance melee targets are pushed away when struck."
+    },
+    {
+      "id": "minecraft:sharpness",
+      "ingles": "Sharpness",
+      "espanol": "Afilado",
+      "aliases": [
+        "Filo"
+      ],
+      "nombreLista": "Afilado",
+      "encantamientoId": 34,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        }
+      ],
+      "descripcion": "Aumenta el daño general de las armas cuerpo a cuerpo.",
+      "descripcionIngles": "Increases general melee weapon damage."
+    },
+    {
+      "id": "minecraft:smite",
+      "ingles": "Smite",
+      "espanol": "Aporrear",
+      "aliases": [
+        "Golpeo",
+        "Castigo"
+      ],
+      "nombreLista": "Aporrear",
+      "encantamientoId": 31,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        },
+        {
+          "ingles": "Spear",
+          "espanol": "Lanza"
+        },
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        }
+      ],
+      "descripcion": "Inflige daño adicional a criaturas no-muertas.",
+      "descripcionIngles": "Deals increased damage to undead mobs."
+    },
+    {
+      "id": "minecraft:sweeping_edge",
+      "ingles": "Sweeping Edge",
+      "espanol": "Barrido",
+      "aliases": [
+        "Filo arrasador"
+      ],
+      "nombreLista": null,
+      "encantamientoId": null,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "faltante",
+      "soloJava": true,
+      "items": [
+        {
+          "ingles": "Sword",
+          "espanol": "Espada"
+        }
+      ],
+      "descripcion": "Aumenta el daño de los ataques de barrido de la espada. Solo está disponible en Java Edition.",
+      "descripcionIngles": "Increases the damage dealt by sweeping sword attacks. Java Edition only."
+    },
+    {
+      "id": "minecraft:wind_burst",
+      "ingles": "Wind Burst",
+      "espanol": "Aeroimpulso",
+      "aliases": [
+        "Ráfaga de viento"
+      ],
+      "nombreLista": null,
+      "encantamientoId": null,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "faltante",
+      "items": [
+        {
+          "ingles": "Mace",
+          "espanol": "Maza"
+        }
+      ],
+      "descripcion": "Lanza al jugador hacia arriba después de acertar un ataque de impacto con la maza; los niveles superiores aumentan la altura.",
+      "descripcionIngles": "Launches the player upward after landing a successful mace smash; higher levels increase the launch height."
+    },
+    {
+      "id": "minecraft:channeling",
+      "ingles": "Channeling",
+      "espanol": "canalizacion",
+      "aliases": [
+        "Conductividad"
+      ],
+      "nombreLista": "canalizacion",
+      "encantamientoId": 8,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        }
+      ],
+      "descripcion": "Hace que un tridente lanzado invoque un rayo sobre el objetivo durante una tormenta cuando este tiene acceso al cielo.",
+      "descripcionIngles": "Causes a thrown trident to summon lightning on a struck target during a thunderstorm when the target is exposed to the sky."
+    },
+    {
+      "id": "minecraft:flame",
+      "ingles": "Flame",
+      "espanol": "Llama",
+      "aliases": [
+        "Fuego"
+      ],
+      "nombreLista": "Llama",
+      "encantamientoId": 1,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        }
+      ],
+      "descripcion": "Hace que las flechas disparadas por un arco prendan fuego a los objetivos.",
+      "descripcionIngles": "Makes arrows fired from a bow ignite targets."
+    },
+    {
+      "id": "minecraft:infinity",
+      "ingles": "Infinity",
+      "espanol": "Infinidad",
+      "aliases": [],
+      "nombreLista": "Infinidad",
+      "encantamientoId": 5,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        }
+      ],
+      "descripcion": "Permite disparar flechas normales con un arco sin consumirlas siempre que el jugador lleve al menos una flecha.",
+      "descripcionIngles": "Allows a bow to fire regular arrows without consuming them as long as the player carries at least one arrow."
+    },
+    {
+      "id": "minecraft:loyalty",
+      "ingles": "Loyalty",
+      "espanol": "Lealtad",
+      "aliases": [],
+      "nombreLista": "Lealtad",
+      "encantamientoId": 25,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        }
+      ],
+      "descripcion": "Hace que el tridente vuelva a su dueño después de ser lanzado; los niveles superiores aceleran el regreso.",
+      "descripcionIngles": "Makes a thrown trident return to its owner; higher levels make it return faster."
+    },
+    {
+      "id": "minecraft:riptide",
+      "ingles": "Riptide",
+      "espanol": "corriente",
+      "aliases": [
+        "Propulsion acuatica",
+        "Corriente marina"
+      ],
+      "nombreLista": "corriente",
+      "encantamientoId": 12,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Trident",
+          "espanol": "Tridente"
+        }
+      ],
+      "descripcion": "Impulsa al jugador junto con el tridente cuando se usa en agua o bajo la lluvia.",
+      "descripcionIngles": "Launches the player together with the trident when used in water or rain."
+    },
+    {
+      "id": "minecraft:multishot",
+      "ingles": "Multishot",
+      "espanol": "Disparo multiple",
+      "aliases": [
+        "Multidisparo"
+      ],
+      "nombreLista": "Disparo multiple",
+      "encantamientoId": 18,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Crossbow",
+          "espanol": "Ballesta"
+        }
+      ],
+      "descripcion": "Hace que la ballesta dispare tres proyectiles a la vez consumiendo solo uno.",
+      "descripcionIngles": "Makes a crossbow fire three projectiles at once while consuming only one projectile."
+    },
+    {
+      "id": "minecraft:piercing",
+      "ingles": "Piercing",
+      "espanol": "Penetrante",
+      "aliases": [
+        "Perforacion"
+      ],
+      "nombreLista": "Penetrante",
+      "encantamientoId": 3,
+      "nivelMaximo": 4,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Crossbow",
+          "espanol": "Ballesta"
+        }
+      ],
+      "descripcion": "Permite que las flechas de ballesta atraviesen varias entidades; los niveles superiores permiten atravesar más objetivos.",
+      "descripcionIngles": "Allows crossbow arrows to pass through multiple entities; higher levels can pierce more targets."
+    },
+    {
+      "id": "minecraft:power",
+      "ingles": "Power",
+      "espanol": "Poder",
+      "aliases": [],
+      "nombreLista": "Poder",
+      "encantamientoId": 9,
+      "nivelMaximo": 5,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        }
+      ],
+      "descripcion": "Aumenta el daño de las flechas disparadas por un arco.",
+      "descripcionIngles": "Increases the damage dealt by arrows fired from a bow."
+    },
+    {
+      "id": "minecraft:punch",
+      "ingles": "Punch",
+      "espanol": "Puñetazo",
+      "aliases": [
+        "Retroceso"
+      ],
+      "nombreLista": "Puñetazo",
+      "encantamientoId": 22,
+      "nivelMaximo": 2,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Bow",
+          "espanol": "Arco"
+        }
+      ],
+      "descripcion": "Aumenta el retroceso causado por las flechas disparadas por un arco.",
+      "descripcionIngles": "Increases the knockback caused by arrows fired from a bow."
+    },
+    {
+      "id": "minecraft:quick_charge",
+      "ingles": "Quick Charge",
+      "espanol": "Carga rapida",
+      "aliases": [],
+      "nombreLista": "Carga rapida",
+      "encantamientoId": 4,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Crossbow",
+          "espanol": "Ballesta"
+        }
+      ],
+      "descripcion": "Reduce el tiempo necesario para recargar una ballesta.",
+      "descripcionIngles": "Reduces the time required to reload a crossbow."
+    },
+    {
+      "id": "minecraft:fortune",
+      "ingles": "Fortune",
+      "espanol": "Fortuna",
+      "aliases": [],
+      "nombreLista": "Fortuna",
+      "encantamientoId": 17,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Pickaxe",
+          "espanol": "Pico"
+        },
+        {
+          "ingles": "Shovel",
+          "espanol": "Pala"
+        },
+        {
+          "ingles": "Hoe",
+          "espanol": "Azada"
+        }
+      ],
+      "descripcion": "Aumenta la cantidad o la probabilidad de ciertos objetos obtenidos al romper bloques compatibles.",
+      "descripcionIngles": "Increases the amount or chance of certain drops obtained when mining compatible blocks."
+    },
+    {
+      "id": "minecraft:luck_of_the_sea",
+      "ingles": "Luck of the Sea",
+      "espanol": "Suerte Marina",
+      "aliases": [
+        "Suerte de los mares"
+      ],
+      "nombreLista": "Suerte Marina",
+      "encantamientoId": 28,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Fishing Rod",
+          "espanol": "Caña de pescar"
+        }
+      ],
+      "descripcion": "Aumenta la probabilidad de obtener tesoros valiosos al pescar y reduce las capturas no deseadas.",
+      "descripcionIngles": "Improves the chance of obtaining valuable treasure while fishing and reduces unwanted catches."
+    },
+    {
+      "id": "minecraft:lure",
+      "ingles": "Lure",
+      "espanol": "Atraccion",
+      "aliases": [],
+      "nombreLista": "Atraccion",
+      "encantamientoId": 37,
+      "nivelMaximo": 3,
+      "tieneNiveles": true,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Fishing Rod",
+          "espanol": "Caña de pescar"
+        }
+      ],
+      "descripcion": "Reduce el tiempo medio de espera hasta que algo muerde el anzuelo.",
+      "descripcionIngles": "Reduces the average wait time before something bites the fishing hook."
+    },
+    {
+      "id": "minecraft:silk_touch",
+      "ingles": "Silk Touch",
+      "espanol": "Toque sedoso",
+      "aliases": [
+        "Toque de seda"
+      ],
+      "nombreLista": "Toque sedoso",
+      "encantamientoId": 16,
+      "nivelMaximo": 1,
+      "tieneNiveles": false,
+      "estado": "encontrado",
+      "items": [
+        {
+          "ingles": "Axe",
+          "espanol": "Hacha"
+        },
+        {
+          "ingles": "Pickaxe",
+          "espanol": "Pico"
+        },
+        {
+          "ingles": "Shovel",
+          "espanol": "Pala"
+        },
+        {
+          "ingles": "Hoe",
+          "espanol": "Azada"
+        }
+      ],
+      "descripcion": "Hace que muchos bloques minados se obtengan como el propio bloque en lugar de producir sus drops habituales.",
+      "descripcionIngles": "Makes many mined blocks drop themselves instead of their usual drops."
+    }
+  ],
+  "versionReferencia": "Minecraft Java Edition 26.3",
+  "totalConObjetos": 38
+}

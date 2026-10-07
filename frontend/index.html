@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Minecraft Vendedores Manager</title>
+    <link rel="stylesheet" href="css/style.css?v=30">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="lang-switch" role="group" aria-label="Idioma">
+                <button type="button" class="btn-mode active" data-lang="es" id="langEs">ES</button>
+                <button type="button" class="btn-mode" data-lang="en" id="langEn">EN</button>
+            </div>
+            <h1 class="title">⛏️ MINECRAFT VENDEDORES ⛏️</h1>
+            <p class="subtitle">Gestión de Pisos de Encantamientos</p>
+        </header>
+
+        <!-- Formulario de Vendedor -->
+        <section class="form-section">
+            <div class="dropdown-header collapsed" id="formToggle">
+                <span class="dropdown-title">➕ Agregar/Editar Vendedor</span>
+                <span class="dropdown-arrow">▼</span>
+            </div>
+            <form id="vendedorForm" class="vendor-form collapsed">
+                <input type="hidden" id="vendedorId">
+                
+                <!-- Vendedor y Piso en la misma línea -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="numero">👤 Vendedor:</label>
+                        <div class="number-input-group">
+                            <button type="button" class="btn btn-number-down" id="decreaseNumero">-</button>
+                            <input type="text" id="numero" required placeholder="1" pattern="[0-9]+" inputmode="numeric">
+                            <button type="button" class="btn btn-number-up" id="increaseNumero">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="piso">🏢 Piso:</label>
+                        <div class="number-input-group">
+                            <button type="button" class="btn btn-number-down" id="decreasePiso">-</button>
+                            <input type="text" id="piso" required placeholder="1" pattern="[0-9]+" inputmode="numeric">
+                            <button type="button" class="btn btn-number-up" id="increasePiso">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>📜 Encantamientos:</label>
+                    <div class="enchantments-container">
+                        <div class="enchantment-input-group">
+                            <div class="autocomplete-wrapper">
+                                <input type="text" id="nombreEncantamiento" placeholder="Nombre del encantamiento" autocomplete="off">
+                                <div id="autocompleteList" class="autocomplete-list"></div>
+                            </div>
+                            
+                            <div class="enchantment-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="tieneNiveles" checked>
+                                    <span>Tiene niveles</span>
+                                </label>
+                            </div>
+                            
+                            <div id="levelControls" class="level-controls-wrapper">
+                                <div class="level-control">
+                                    <label class="small-label">Nivel:</label>
+                                    <button type="button" class="btn btn-level-down" id="decreaseLevel">-</button>
+                                    <input type="text" id="nivelEncantamiento" placeholder="1" value="1" pattern="[0-9]+" inputmode="numeric">
+                                    <button type="button" class="btn btn-level-up" id="increaseLevel">+</button>
+                                </div>
+                                
+                                <div class="level-control">
+                                    <label class="small-label">Nivel máx:</label>
+                                    <button type="button" class="btn btn-level-down" id="decreaseMaxLevel">-</button>
+                                    <input type="text" id="nivelMaximo" placeholder="5" value="5" pattern="[0-9]+" inputmode="numeric">
+                                    <button type="button" class="btn btn-level-up" id="increaseMaxLevel">+</button>
+                                </div>
+                            </div>
+                            
+                            <button type="button" id="addEnchantment" class="btn btn-add">+ Agregar</button>
+                        </div>
+                        
+                        <div class="enchantments-section">
+                            <label style="color: #FFD700; font-size: 11px; margin-bottom: 8px; display: block;">📜 Encantamientos agregados:</label>
+                            <div id="enchantmentsList" class="enchantments-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">💾 Guardar Vendedor</button>
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">❌ Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sistema de Pestañas -->
+        <section class="tabs-section">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="enchantments">📜 Encantamientos</button>
+                <button class="tab-btn" data-tab="vendors">👤 Vendedores</button>
+                <button class="tab-btn" data-tab="build">🛠️ Build</button>
+            </div>
+
+            <!-- Pestaña de Encantamientos -->
+            <div class="tab-content active" id="enchantments-tab">
+                <!-- Filtros de Encantamientos -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="filterEnchName">Encantamiento:</label>
+                        <input type="text" id="filterEnchName" placeholder="Nombre">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterEnchNivel">Nivel:</label>
+                        <input type="text" id="filterEnchNivel" placeholder="1-6" pattern="[0-9]+" inputmode="numeric">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterEnchPiso">Piso:</label>
+                        <input type="text" id="filterEnchPiso" placeholder="Piso" pattern="[0-9]+" inputmode="numeric">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterEnchVendor">Vendedor:</label>
+                        <input type="text" id="filterEnchVendor" placeholder="Nº" pattern="[0-9]+" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-filter" id="applyEnchFilters">🔎 Buscar</button>
+                    <button class="btn btn-secondary" id="clearEnchFilters">🔄 Limpiar</button>
+                </div>
+
+                <div class="list-mode" id="enchantmentsListMode">
+                    <span class="list-mode-label">Ver lista:</span>
+                    <div class="list-mode-options" role="group" aria-label="Modo de la lista de encantamientos">
+                        <button type="button" class="btn-mode active" data-mode="paginated" id="modePaginated" aria-pressed="true">Paginador</button>
+                        <button type="button" class="btn-mode" data-mode="infinite" id="modeInfinite" aria-pressed="false">Infinita</button>
+                        <div class="export-menu">
+                            <button type="button" class="btn-export" id="exportEnchantments" aria-expanded="false" aria-haspopup="true">Exportar</button>
+                            <div class="export-options" id="exportOptions" hidden>
+                                <button type="button" data-format="imagen">Imagen</button>
+                                <button type="button" data-format="json">JSON</button>
+                                <button type="button" data-format="texto">Texto</button>
+                                <button type="button" data-format="html">HTML</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de Encantamientos -->
+                <div class="table-wrapper">
+                    <table class="enchantments-table">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-sort="nombre">Encantamiento <span class="sort-arrow">⇅</span></th>
+                                <th class="sortable" data-sort="nivel">Nivel <span class="sort-arrow">⇅</span></th>
+                                <th class="sortable" data-sort="vendedor">Vendedor <span class="sort-arrow">⇅</span></th>
+                                <th class="sortable" data-sort="piso">Piso <span class="sort-arrow">⇅</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="enchantmentsTableBody">
+                            <!-- Se llenará dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Paginador de Encantamientos -->
+                <div class="pagination" id="enchantmentsPagination">
+                    <button class="btn-page" id="enchPrevPage">◀ Anterior</button>
+                    <span class="page-info" id="enchPageInfo">Página 1 de 1</span>
+                    <button class="btn-page" id="enchNextPage">Siguiente ▶</button>
+                </div>
+                <div class="infinite-footer" id="enchantmentsInfiniteFooter" hidden>
+                    <p class="infinite-info" id="enchantmentsInfiniteInfo"></p>
+                    <div id="enchantmentsScrollSentinel" class="infinite-sentinel" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <!-- Pestaña de Vendedores -->
+            <div class="tab-content" id="vendors-tab">
+                <!-- Filtros de Vendedores -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="filterPiso">Piso:</label>
+                        <input type="text" id="filterPiso" placeholder="Piso" pattern="[0-9]+" inputmode="numeric">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterNumero">Nº Vendedor:</label>
+                        <input type="text" id="filterNumero" placeholder="Número" pattern="[0-9]+" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-filter" id="applyFilters">🔎 Buscar</button>
+                    <button class="btn btn-secondary" id="clearFilters">🔄 Limpiar</button>
+                </div>
+
+                <!-- Lista de Vendedores -->
+                <div class="vendors-section">
+                    <h3 class="section-subtitle">Vendedores (<span id="vendorCount">0</span>)</h3>
+                    <div id="vendorsList" class="vendors-list">
+                        <!-- Los vendedores se cargarán aquí dinámicamente -->
+                    </div>
+                    
+                    <!-- Paginador de Vendedores -->
+                    <div class="pagination" id="vendorsPagination">
+                        <button class="btn-page" id="vendorPrevPage">◀ Anterior</button>
+                        <span class="page-info" id="vendorPageInfo">Página 1 de 1</span>
+                        <button class="btn-page" id="vendorNextPage">Siguiente ▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña Build -->
+            <div class="tab-content" id="build-tab">
+                <div class="build-subnav" role="tablist" aria-label="Vistas de build">
+                    <button type="button" class="btn-mode active" data-build-view="lista" id="buildViewList">Lista</button>
+                    <button type="button" class="btn-mode" data-build-view="composiciones" id="buildViewCompositions">Composiciones</button>
+                </div>
+
+                <div id="buildListView">
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="filterBuildObject">Objeto:</label>
+                            <input type="text" id="filterBuildObject" placeholder="Espada, sword..." autocomplete="off">
+                        </div>
+                        <div class="filter-group">
+                            <label for="filterBuildEnchant">Encantamiento:</label>
+                            <input type="text" id="filterBuildEnchant" placeholder="Filo, sharpness..." autocomplete="off">
+                        </div>
+                    </div>
+                    <div id="buildList" class="build-list"></div>
+                </div>
+
+                <div id="buildCompositionsView" hidden>
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="filterCompositionObject">Objeto:</label>
+                            <input type="text" id="filterCompositionObject" placeholder="Espada, sword..." autocomplete="off">
+                        </div>
+                    </div>
+                    <div id="compositionsList" class="build-list"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h3>⚠️ Confirmar Eliminación</h3>
+            <p>¿Estás seguro de que quieres eliminar este vendedor?</p>
+            <div class="modal-actions">
+                <button class="btn btn-danger" id="confirmDelete">✅ Sí, eliminar</button>
+                <button class="btn btn-secondary" id="cancelDelete">❌ Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/compatibilidad.js?v=1"></script>
+    <div id="enchantTip" class="enchant-tip" hidden></div>
+    <script src="js/app.js?v=38"></script>
+</body>
+</html>

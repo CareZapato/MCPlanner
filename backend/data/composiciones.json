@@ -1,0 +1,970 @@
+[
+  {
+    "id": "sword_general_pve",
+    "nombre": "Espada general PvE",
+    "descripcion": "Daño general, botín y durabilidad para supervivencia. Uso: PvE general / supervivencia.",
+    "itemId": "sword",
+    "itemIngles": "Sword",
+    "encantamientos": [
+      {
+        "id": "minecraft:sharpness",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:sweeping_edge",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:looting",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "sword_undead",
+    "nombre": "Espada anti-no-muertos",
+    "descripcion": "Especializada contra zombies, esqueletos, Wither y otros no-muertos. Uso: Wither / granjas de no-muertos.",
+    "itemId": "sword",
+    "itemIngles": "Sword",
+    "encantamientos": [
+      {
+        "id": "minecraft:smite",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:sweeping_edge",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:looting",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "spear_general",
+    "nombre": "Lanza general",
+    "descripcion": "Daño, movilidad, botín y mantenimiento para uso general. Uso: PvE / exploración / movilidad.",
+    "itemId": "spear",
+    "itemIngles": "Spear",
+    "encantamientos": [
+      {
+        "id": "minecraft:sharpness",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:lunge",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:looting",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "spear_undead",
+    "nombre": "Lanza anti-no-muertos",
+    "descripcion": "Variante Smite con Lunge para combatir no-muertos. Uso: Wither / no-muertos.",
+    "itemId": "spear",
+    "itemIngles": "Spear",
+    "encantamientos": [
+      {
+        "id": "minecraft:smite",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:lunge",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:looting",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "axe_silk_touch",
+    "nombre": "Hacha Silk Touch",
+    "descripcion": "Hacha de utilidad para recolectar bloques conservando su forma. Uso: Construcción / recolección.",
+    "itemId": "axe",
+    "itemIngles": "Axe",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:silk_touch",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "axe_fortune",
+    "nombre": "Hacha Fortune",
+    "descripcion": "Variante para drops afectados por Fortune. Uso: Recolección específica.",
+    "itemId": "axe",
+    "itemIngles": "Axe",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:fortune",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "axe_combat",
+    "nombre": "Hacha de combate",
+    "descripcion": "Daño general sin perder utilidad como herramienta. Uso: Combate / PvP situacional.",
+    "itemId": "axe",
+    "itemIngles": "Axe",
+    "encantamientos": [
+      {
+        "id": "minecraft:sharpness",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "mace_density_pve",
+    "nombre": "Maza Density PvE",
+    "descripcion": "Maximiza el daño de smash contra mobs y permite encadenar golpes. Uso: PvE / smash damage.",
+    "itemId": "mace",
+    "itemIngles": "Mace",
+    "encantamientos": [
+      {
+        "id": "minecraft:density",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:wind_burst",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "mace_breach_pvp",
+    "nombre": "Maza Breach PvP",
+    "descripcion": "Reduce fuertemente la efectividad de la armadura rival. Uso: PvP / enemigos armados.",
+    "itemId": "mace",
+    "itemIngles": "Mace",
+    "encantamientos": [
+      {
+        "id": "minecraft:breach",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:wind_burst",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "mace_smite_undead",
+    "nombre": "Maza Smite",
+    "descripcion": "Especializada contra no-muertos. Uso: Wither / no-muertos.",
+    "itemId": "mace",
+    "itemIngles": "Mace",
+    "encantamientos": [
+      {
+        "id": "minecraft:smite",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:wind_burst",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "trident_loyalty_channeling",
+    "nombre": "Tridente Loyalty + Channeling",
+    "descripcion": "Tridente arrojadizo que vuelve y puede invocar rayos durante tormentas. Uso: Combate / utilidad / tormentas.",
+    "itemId": "trident",
+    "itemIngles": "Trident",
+    "encantamientos": [
+      {
+        "id": "minecraft:impaling",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:loyalty",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:channeling",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "trident_riptide",
+    "nombre": "Tridente Riptide",
+    "descripcion": "Especializado en movilidad por agua y lluvia. Uso: Movilidad / exploración.",
+    "itemId": "trident",
+    "itemIngles": "Trident",
+    "encantamientos": [
+      {
+        "id": "minecraft:impaling",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:riptide",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "bow_mending",
+    "nombre": "Arco Mending",
+    "descripcion": "Arco sostenible para uso prolongado; requiere llevar flechas. Uso: Supervivencia prolongada.",
+    "itemId": "bow",
+    "itemIngles": "Bow",
+    "encantamientos": [
+      {
+        "id": "minecraft:power",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:flame",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:punch",
+        "nivel": 2
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "bow_infinity",
+    "nombre": "Arco Infinity",
+    "descripcion": "Prioriza comodidad con flechas normales ilimitadas a cambio de perder Mending. Uso: Exploración / combate general.",
+    "itemId": "bow",
+    "itemIngles": "Bow",
+    "encantamientos": [
+      {
+        "id": "minecraft:power",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:flame",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:punch",
+        "nivel": 2
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:infinity",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "crossbow_piercing",
+    "nombre": "Ballesta Piercing",
+    "descripcion": "Atraviesa objetivos y favorece precisión y recuperación de flechas. Uso: PvE lineal / flechas especiales.",
+    "itemId": "crossbow",
+    "itemIngles": "Crossbow",
+    "encantamientos": [
+      {
+        "id": "minecraft:quick_charge",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:piercing",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "crossbow_multishot",
+    "nombre": "Ballesta Multishot",
+    "descripcion": "Dispara tres proyectiles para daño y control de área. Uso: Grupos / fireworks.",
+    "itemId": "crossbow",
+    "itemIngles": "Crossbow",
+    "encantamientos": [
+      {
+        "id": "minecraft:quick_charge",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:multishot",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "pickaxe_fortune",
+    "nombre": "Pico Fortune",
+    "descripcion": "Configuración endgame para minería de minerales. Uso: Minería de minerales.",
+    "itemId": "pickaxe",
+    "itemIngles": "Pickaxe",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:fortune",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "pickaxe_silk_touch",
+    "nombre": "Pico Silk Touch",
+    "descripcion": "Configuración endgame para construcción / almacenamiento. Uso: Construcción / almacenamiento.",
+    "itemId": "pickaxe",
+    "itemIngles": "Pickaxe",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:silk_touch",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "shovel_silk_touch",
+    "nombre": "Pala Silk Touch",
+    "descripcion": "Configuración endgame para construcción / recolección. Uso: Construcción / recolección.",
+    "itemId": "shovel",
+    "itemIngles": "Shovel",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:silk_touch",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "shovel_fortune",
+    "nombre": "Pala Fortune",
+    "descripcion": "Configuración endgame para pedernal / drops. Uso: Pedernal / drops.",
+    "itemId": "shovel",
+    "itemIngles": "Shovel",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:fortune",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "hoe_fortune",
+    "nombre": "Azada Fortune",
+    "descripcion": "Configuración endgame para cultivos / hojas. Uso: Cultivos / hojas.",
+    "itemId": "hoe",
+    "itemIngles": "Hoe",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:fortune",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "hoe_silk_touch",
+    "nombre": "Azada Silk Touch",
+    "descripcion": "Configuración endgame para sculk / hojas / construcción. Uso: Sculk / hojas / construcción.",
+    "itemId": "hoe",
+    "itemIngles": "Hoe",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:silk_touch",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "shears_max",
+    "nombre": "Tijeras duraderas",
+    "descripcion": "Configuración práctica máxima para tijeras. Uso: Lana / hojas / utilidad.",
+    "itemId": "shears",
+    "itemIngles": "Shears",
+    "encantamientos": [
+      {
+        "id": "minecraft:efficiency",
+        "nivel": 5
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "fishing_rod_god",
+    "nombre": "Caña completa",
+    "descripcion": "Más tesoros, menos espera y durabilidad sostenible. Uso: Pesca.",
+    "itemId": "fishing_rod",
+    "itemIngles": "Fishing Rod",
+    "encantamientos": [
+      {
+        "id": "minecraft:luck_of_the_sea",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:lure",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "flint_and_steel_durable",
+    "nombre": "Mechero duradero",
+    "descripcion": "Máxima duración y reparación automática. Uso: Utilidad / supervivencia.",
+    "itemId": "flint_and_steel",
+    "itemIngles": "Flint and Steel",
+    "encantamientos": [
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "brush_durable",
+    "nombre": "Pincel duradero",
+    "descripcion": "Ideal para arqueología prolongada. Uso: Utilidad / supervivencia.",
+    "itemId": "brush",
+    "itemIngles": "Brush",
+    "encantamientos": [
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "carrot_on_a_stick_durable",
+    "nombre": "Caña con zanahoria duradera",
+    "descripcion": "Reduce el mantenimiento del objeto. Uso: Utilidad / supervivencia.",
+    "itemId": "carrot_on_a_stick",
+    "itemIngles": "Carrot on a Stick",
+    "encantamientos": [
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "warped_fungus_on_a_stick_durable",
+    "nombre": "Caña con hongo duradera",
+    "descripcion": "Reduce el mantenimiento del objeto. Uso: Utilidad / supervivencia.",
+    "itemId": "warped_fungus_on_a_stick",
+    "itemIngles": "Warped Fungus on a Stick",
+    "encantamientos": [
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "elytra_durable",
+    "nombre": "Élitros endgame",
+    "descripcion": "Configuración esencial para vuelo prolongado. Uso: Utilidad / supervivencia.",
+    "itemId": "elytra",
+    "itemIngles": "Elytra",
+    "encantamientos": [
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "shield_durable",
+    "nombre": "Escudo duradero",
+    "descripcion": "Configuración de mantenimiento mínimo. Uso: Utilidad / supervivencia.",
+    "itemId": "shield",
+    "itemIngles": "Shield",
+    "encantamientos": [
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "helmet_general",
+    "nombre": "Casco general",
+    "descripcion": "Casco endgame equilibrado para combate y exploración acuática. Uso: Supervivencia general.",
+    "itemId": "helmet",
+    "itemIngles": "Helmet",
+    "encantamientos": [
+      {
+        "id": "minecraft:protection",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:respiration",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:aqua_affinity",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "turtle_shell_general",
+    "nombre": "Caparazón acuático",
+    "descripcion": "Configuración general para exploración acuática. Uso: Exploración acuática.",
+    "itemId": "turtle_shell",
+    "itemIngles": "Turtle Shell",
+    "encantamientos": [
+      {
+        "id": "minecraft:protection",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:respiration",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:aqua_affinity",
+        "nivel": 1
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "chestplate_general",
+    "nombre": "Peto general",
+    "descripcion": "Peto endgame para supervivencia general. Uso: Supervivencia general.",
+    "itemId": "chestplate",
+    "itemIngles": "Chestplate",
+    "encantamientos": [
+      {
+        "id": "minecraft:protection",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "leggings_general",
+    "nombre": "Grebas generales",
+    "descripcion": "Grebas endgame con movilidad agachado mejorada. Uso: Supervivencia / Ancient Cities / construcción.",
+    "itemId": "leggings",
+    "itemIngles": "Leggings",
+    "encantamientos": [
+      {
+        "id": "minecraft:protection",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:swift_sneak",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "boots_depth_strider",
+    "nombre": "Botas movilidad general",
+    "descripcion": "La opción general recomendada: agua, caídas y Soul Speed. Uso: Supervivencia / exploración.",
+    "itemId": "boots",
+    "itemIngles": "Boots",
+    "encantamientos": [
+      {
+        "id": "minecraft:protection",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:feather_falling",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:depth_strider",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  },
+  {
+    "id": "boots_frost_walker",
+    "nombre": "Botas Frost Walker",
+    "descripcion": "Variante especializada para desplazarse sobre agua congelándola. Uso: Exploración terrestre / hielo.",
+    "itemId": "boots",
+    "itemIngles": "Boots",
+    "encantamientos": [
+      {
+        "id": "minecraft:protection",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:feather_falling",
+        "nivel": 4
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "nivel": 2
+      },
+      {
+        "id": "minecraft:soul_speed",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "nivel": 3
+      },
+      {
+        "id": "minecraft:mending",
+        "nivel": 1
+      }
+    ],
+    "createdAt": "2026-10-07T22:02:17.935Z",
+    "updatedAt": "2026-10-07T22:02:17.935Z"
+  }
+]
