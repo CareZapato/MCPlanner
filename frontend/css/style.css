@@ -51,22 +51,37 @@ body {
    HEADER
    ================================================ */
 .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background: var(--minecraft-obsidian);
-    border: 4px solid var(--minecraft-stone-dark);
-    padding: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+    border: 3px solid var(--minecraft-stone-dark);
+    padding: 8px 12px;
+    text-align: left;
+    margin-bottom: 16px;
     box-shadow: var(--shadow-lg);
     position: relative;
 }
 
 .lang-switch {
-    position: absolute;
-    top: 14px;
-    right: 14px;
+    position: static;
     z-index: 2;
     display: flex;
-    gap: 6px;
+    flex: 0 0 auto;
+    gap: 3px;
+    margin-left: auto;
+}
+
+.lang-switch .btn-mode {
+    min-width: 0;
+    min-height: 0;
+    width: auto;
+    padding: 2px 4px;
+    border-width: 1px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 9px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
 }
 
 .enchant-tip {
@@ -144,15 +159,26 @@ body {
 }
 
 .title {
+    flex: 0 0 auto;
+    margin: 0;
     color: var(--minecraft-emerald);
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-shadow: 3px 3px 0px var(--minecraft-black);
+    font-size: 14px;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-shadow: 2px 2px 0px var(--minecraft-black);
 }
 
 .subtitle {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
     color: var(--minecraft-white);
-    font-size: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     opacity: 0.9;
 }
 
@@ -1587,6 +1613,10 @@ body {
     padding: 4px 6px;
 }
 
+.composition-card {
+    cursor: pointer;
+}
+
 .build-reason,
 .build-save-note,
 .composition-description,
@@ -2081,36 +2111,29 @@ body {
     }
 
     .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 14px 12px 18px;
-        margin-bottom: 16px;
-    }
-
-    .lang-switch {
-        position: static;
-        align-self: flex-end;
+        gap: 6px;
+        padding: 6px 8px;
+        margin-bottom: 10px;
     }
 
     .lang-switch .btn-mode {
-        min-width: 48px;
-        min-height: 44px;
+        min-width: 0;
+        min-height: 0;
+        width: auto;
+        padding: 1px 3px;
+        font-size: 8px;
     }
 
     .title {
         margin: 0;
         padding: 0;
-        font-size: 22px;
-        line-height: 1.45;
+        font-size: 10px;
+        line-height: 1.2;
     }
 
     .subtitle {
-        max-width: 22rem;
-        font-family: "Segoe UI", Arial, sans-serif;
-        font-size: 15px;
-        line-height: 1.45;
+        font-size: 10px;
+        line-height: 1.2;
     }
 
     .dropdown-header {
@@ -2133,17 +2156,19 @@ body {
 
     .tabs-header {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 6px;
-        margin-bottom: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 4px;
+        margin-bottom: 8px;
     }
 
     .tab-btn {
         top: 0;
-        min-height: 44px;
-        padding: 12px 10px;
-        font-size: 11px;
-        line-height: 1.45;
+        min-height: 0;
+        padding: 7px 2px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 650;
+        line-height: 1.2;
         white-space: nowrap;
     }
 
@@ -2188,70 +2213,69 @@ body {
     }
 
     .table-wrapper {
-        border: 0;
-        background: transparent;
-    }
-
-    .enchantments-table thead {
-        display: none;
-    }
-
-    .enchantments-table,
-    .enchantments-table tbody,
-    .enchantments-table tr,
-    .enchantments-table td {
-        display: block;
-        width: 100% !important;
+        overflow-x: hidden;
     }
 
     .enchantments-table {
-        background: transparent;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
         font-family: "Segoe UI", Arial, sans-serif;
     }
 
-    .enchantments-table tr {
-        margin: 0 0 8px;
-        padding: 8px 10px;
-        background: var(--minecraft-gray);
-        border: 2px solid var(--minecraft-stone-dark);
+    .enchantments-table thead {
+        display: table-header-group;
     }
 
-    .enchantments-table td {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 12px;
-        padding: 5px 0;
+    .enchantments-table tbody {
+        display: table-row-group;
+    }
+
+    .enchantments-table tr {
+        display: table-row;
+        margin: 0;
+        padding: 0;
+        background: transparent;
         border: 0;
-        overflow: visible;
-        font-size: 15px;
-        line-height: 1.35;
-        text-align: right;
-        white-space: normal;
+    }
+
+    .enchantments-table th,
+    .enchantments-table td {
+        display: table-cell;
+        width: auto;
+        padding: 6px 4px;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 1.25;
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .enchantments-table td::before {
-        content: attr(data-label);
-        color: var(--minecraft-gold);
-        font-size: 12px;
-        text-align: left;
+        content: none;
+    }
+
+    .enchantments-table th:nth-child(1),
+    .enchantments-table td:nth-child(1) {
+        width: 52%;
+    }
+
+    .enchantments-table th:nth-child(2),
+    .enchantments-table td:nth-child(2),
+    .enchantments-table th:nth-child(3),
+    .enchantments-table td:nth-child(3),
+    .enchantments-table th:nth-child(4),
+    .enchantments-table td:nth-child(4) {
+        width: 16%;
+        text-align: center;
     }
 
     .enchantments-table td.ench-name {
         color: var(--minecraft-emerald);
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 650;
-    }
-
-    .enchantments-table td[colspan] {
-        display: block;
-        text-align: center;
-        font-family: "Segoe UI", Arial, sans-serif;
-        font-size: 14px;
-    }
-
-    .enchantments-table td[colspan]::before {
-        content: none;
+        text-align: left;
     }
 
     .pagination {

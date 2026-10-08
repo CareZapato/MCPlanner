@@ -303,6 +303,8 @@ function inicializarEventos() {
     }
     if (elements.compositionsList) {
         elements.compositionsList.addEventListener('click', manejarClickComposiciones);
+        elements.compositionsList.addEventListener('change', manejarCambioBuild);
+        elements.compositionsList.addEventListener('input', manejarInputBuild);
     }
     iniciarSugerenciasBuild();
 
@@ -666,6 +668,11 @@ async function cargarBuild() {
     }
 }
 
+function refrescarEditor() {
+    if (vistaBuild === 'composiciones') renderizarComposiciones();
+    else renderizarBuild();
+}
+
 function objetoPorIngles(ingles) {
     return objetosBuild.find(objeto => objeto.ingles === ingles);
 }
@@ -908,7 +915,7 @@ function manejarClickBuild(evento) {
     }
     if (evento.target.closest('[data-cerrar-composicion]')) {
         composicionActiva = null;
-        renderizarBuild();
+        refrescarEditor();
         return;
     }
     if (evento.target.closest('[data-guardar-composicion]')) {
@@ -937,7 +944,7 @@ function manejarCambioBuild(evento) {
             composicionActiva.seleccion.delete(id);
         }
         composicionActiva.pendientes = [];
-        renderizarBuild();
+        refrescarEditor();
         return;
     }
     if (evento.target.matches('[data-level]')) {
@@ -959,7 +966,7 @@ function completarAlMaximo() {
     const resultado = Compatibilidad.completar(objeto.encantamientos, composicionActiva.seleccion);
     composicionActiva.seleccion = resultado.seleccion;
     composicionActiva.pendientes = resultado.pendientes;
-    renderizarBuild();
+    refrescarEditor();
 }
 
 function elegirOpcionMaxima(ids) {
@@ -1036,8 +1043,10 @@ function renderizarComposiciones() {
     elements.compositionsList.innerHTML = '';
     visibles.forEach(composicion => {
         const objeto = objetoPorIngles(composicion.itemIngles);
+        const abierta = composicionActiva && composicionActiva.id === composicion.id;
         const tarjeta = document.createElement('article');
-        tarjeta.className = 'build-item composition-card';
+        tarjeta.className = abierta ? 'build-item composition-card is-composing' : 'build-item composition-card';
+        tarjeta.dataset.id = composicion.id;
 
         const cabecera = document.createElement('div');
         cabecera.className = 'build-heading';
@@ -1056,10 +1065,21 @@ function renderizarComposiciones() {
         cuenta.textContent = objeto ? `${objeto.espanol} · ${composicion.encantamientos.length}` : composicion.itemIngles;
         titulo.appendChild(cuenta);
         cabecera.appendChild(titulo);
+        if (abierta) {
+            const cerrar = document.createElement('button');
+            cerrar.type = 'button';
+            cerrar.className = 'build-action';
+            cerrar.dataset.cerrarComposicion = '1';
+            cerrar.textContent = 'Cerrar';
+            cabecera.appendChild(cerrar);
+        }
         tarjeta.appendChild(cabecera);
 
         const lista = document.createElement('div');
         lista.className = 'composition-body';
+        if (abierta && objeto) {
+            lista.appendChild(crearConstructor(objeto));
+        } else {
         const chips = document.createElement('div');
         chips.className = 'build-enchants';
         composicion.encantamientos.forEach(item => {
@@ -1079,7 +1099,8 @@ function renderizarComposiciones() {
             chips.appendChild(chip);
         });
         lista.appendChild(chips);
-        if (composicion.descripcion) {
+        }
+        if (!abierta && composicion.descripcion) {
             const descripcion = document.createElement('p');
             descripcion.className = 'composition-description';
             descripcion.textContent = composicion.descripcion;
@@ -1112,11 +1133,29 @@ function actualizarVistaBuild() {
     if (vistaBuild === 'composiciones') renderizarComposiciones();
 }
 
+function activarComposicion(composicion) {
+    composicionActiva = {
+        itemIngles: composicion.itemIngles,
+        id: composicion.id,
+        nombre: composicion.nombre,
+        descripcion: composicion.descripcion || '',
+        seleccion: new Map((composicion.encantamientos || []).map(item => [item.id, item.nivel])),
+        pendientes: []
+    };
+    vistaBuild = 'composiciones';
+    actualizarVistaBuild();
+    document.querySelector('.composition-card.is-composing')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
 async function manejarClickComposiciones(evento) {
+    if (evento.target.closest('.build-composer') || evento.target.closest('[data-cerrar-composicion]')) {
+        manejarClickBuild(evento);
+        return;
+    }
     const editar = evento.target.closest('[data-editar]');
     if (editar) {
         const composicion = composiciones.find(item => item.id === editar.dataset.editar);
-        if (composicion) abrirComposicion(composicion.itemIngles, composicion);
+        if (composicion) activarComposicion(composicion);
         return;
     }
     const duplicar = evento.target.closest('[data-duplicar]');
@@ -1130,8 +1169,21 @@ async function manejarClickComposiciones(evento) {
         const composicion = composiciones.find(item => item.id === eliminar.dataset.eliminar);
         if (!composicion || !confirm(`¿Eliminar "${composicion.nombre}"?`)) return;
         await fetch(`${API_URL}/composiciones/${composicion.id}`, { method: 'DELETE' });
+        if (composicionActiva && composicionActiva.id === composicion.id) composicionActiva = null;
         await cargarComposiciones();
+        return;
     }
+    if (evento.target.closest('button, input, select, textarea, label')) return;
+    const tarjeta = evento.target.closest('.composition-card');
+    if (!tarjeta) return;
+    const composicion = composiciones.find(item => item.id === tarjeta.dataset.id);
+    if (!composicion) return;
+    if (composicionActiva && composicionActiva.id === composicion.id) {
+        composicionActiva = null;
+        renderizarComposiciones();
+        return;
+    }
+    activarComposicion(composicion);
 }
 
 function iniciarSugerenciasBuild() {
@@ -2360,7 +2412,7 @@ function crearFilaEncantamiento(enc) {
     const tdPiso = document.createElement('td');
     tdPiso.className = 'ench-floor';
     tdPiso.dataset.label = 'Piso';
-    tdPiso.textContent = `Piso ${enc.piso}`;
+    tdPiso.textContent = String(enc.piso);
     tr.appendChild(tdPiso);
 
     return tr;
