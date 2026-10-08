@@ -2111,8 +2111,8 @@ body {
     }
 
     .header {
-        gap: 6px;
-        padding: 6px 8px;
+        gap: 8px;
+        padding: 10px 10px;
         margin-bottom: 10px;
     }
 
@@ -2127,13 +2127,14 @@ body {
     .title {
         margin: 0;
         padding: 0;
-        font-size: 10px;
-        line-height: 1.2;
+        font-size: 18px;
+        line-height: 1.45;
+        text-shadow: 2px 2px 0 var(--minecraft-black);
     }
 
     .subtitle {
-        font-size: 10px;
-        line-height: 1.2;
+        font-size: 11px;
+        line-height: 1.3;
     }
 
     .dropdown-header {
