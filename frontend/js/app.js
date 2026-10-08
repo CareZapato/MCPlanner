@@ -2327,6 +2327,7 @@ function crearFilaEncantamiento(enc) {
 
     const tdNombre = document.createElement('td');
     tdNombre.className = 'ench-name';
+    tdNombre.dataset.label = 'Encantamiento';
     const ficha = buscarFicha(enc.nombre);
     tdNombre.textContent = ficha ? nombreVisible(ficha) : enc.nombre;
     if (ficha) tdNombre.dataset.ficha = ficha.id;
@@ -2334,6 +2335,7 @@ function crearFilaEncantamiento(enc) {
 
     const tdNivel = document.createElement('td');
     tdNivel.className = 'ench-level';
+    tdNivel.dataset.label = 'Nivel';
     if (enc.tieneNiveles === false) {
         tdNivel.textContent = '—';
     } else {
@@ -2351,11 +2353,13 @@ function crearFilaEncantamiento(enc) {
 
     const tdVendor = document.createElement('td');
     tdVendor.className = 'ench-vendor';
+    tdVendor.dataset.label = 'Vendedor';
     tdVendor.textContent = `#${enc.vendedorNumero}`;
     tr.appendChild(tdVendor);
 
     const tdPiso = document.createElement('td');
     tdPiso.className = 'ench-floor';
+    tdPiso.dataset.label = 'Piso';
     tdPiso.textContent = `Piso ${enc.piso}`;
     tr.appendChild(tdPiso);
 

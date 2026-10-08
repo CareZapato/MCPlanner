@@ -2069,3 +2069,298 @@ body {
     margin: 0;
 }
 
+
+@media (max-width: 720px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 12px 18px;
+        margin-bottom: 16px;
+    }
+
+    .lang-switch {
+        position: static;
+        align-self: flex-end;
+    }
+
+    .lang-switch .btn-mode {
+        min-width: 48px;
+        min-height: 44px;
+    }
+
+    .title {
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+        line-height: 1.45;
+    }
+
+    .subtitle {
+        max-width: 22rem;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .dropdown-header {
+        align-items: flex-start;
+        gap: 10px;
+        min-height: 48px;
+        padding: 12px;
+    }
+
+    .dropdown-title {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .tabs-section {
+        margin-top: 16px;
+    }
+
+    .tabs-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+
+    .tab-btn {
+        top: 0;
+        min-height: 44px;
+        padding: 12px 10px;
+        font-size: 11px;
+        line-height: 1.45;
+        white-space: nowrap;
+    }
+
+    .tab-content {
+        padding: 12px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-group input,
+    .filters .btn {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .list-mode {
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .list-mode-label {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .list-mode-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .list-mode-options .export-menu {
+        grid-column: 1 / -1;
+    }
+
+    .btn-mode,
+    .btn-export {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .table-wrapper {
+        border: 0;
+        background: transparent;
+    }
+
+    .enchantments-table thead {
+        display: none;
+    }
+
+    .enchantments-table,
+    .enchantments-table tbody,
+    .enchantments-table tr,
+    .enchantments-table td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .enchantments-table {
+        background: transparent;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .enchantments-table tr {
+        margin: 0 0 8px;
+        padding: 8px 10px;
+        background: var(--minecraft-gray);
+        border: 2px solid var(--minecraft-stone-dark);
+    }
+
+    .enchantments-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+        padding: 5px 0;
+        border: 0;
+        overflow: visible;
+        font-size: 15px;
+        line-height: 1.35;
+        text-align: right;
+        white-space: normal;
+    }
+
+    .enchantments-table td::before {
+        content: attr(data-label);
+        color: var(--minecraft-gold);
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .enchantments-table td.ench-name {
+        color: var(--minecraft-emerald);
+        font-size: 16px;
+        font-weight: 650;
+    }
+
+    .enchantments-table td[colspan] {
+        display: block;
+        text-align: center;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .enchantments-table td[colspan]::before {
+        content: none;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-page,
+    .page-info {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .page-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .build-item,
+    .build-item.is-composing {
+        grid-template-columns: 1fr;
+    }
+
+    .build-heading {
+        align-items: flex-start;
+    }
+
+    .build-name {
+        overflow-wrap: anywhere;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .build-enchant {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    .build-action {
+        min-height: 44px;
+    }
+
+    .build-subnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .build-subnav .btn-mode {
+        min-height: 44px;
+    }
+
+    .vendors-list {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-group input,
+    .build-composer .build-field input,
+    .build-composer .build-field textarea,
+    .build-composer .build-choice select,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    .build-choices {
+        grid-template-columns: 1fr;
+    }
+
+    .build-choice {
+        font-size: 15px;
+    }
+
+    .modal-content {
+        width: auto;
+        max-width: calc(100vw - 32px);
+        margin: 12px;
+        padding: 16px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions .btn {
+        min-height: 44px;
+    }
+
+    .btn {
+        min-height: 44px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    .form-group label,
+    .small-label,
+    .filter-group label {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .autocomplete-item {
+        min-height: 44px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 15px;
+    }
+}
